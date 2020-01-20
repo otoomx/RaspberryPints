@@ -217,7 +217,7 @@ require_once __DIR__.'/config_files.php';
 			foreach($sql_query as $sql){
 			//echo $i++;
 			//echo "	";
-			mysqli_query($sql) or die('error in query');
+			mysqli_query($con,$sql) or die('error in query');
 			}
 
 			
